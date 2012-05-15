@@ -1,0 +1,26 @@
+.tryto_cell {
+  width: 290px;
+  float: left;
+  margin-right: 10px;
+  h4 {
+    font-size: 16px;
+    padding-bottom: 10px;
+  }
+  .body {
+    .info {
+      float: left;
+      width: 80px;
+      .date {
+        font-size: 14px;
+        color: grey;
+      }
+      .intro {
+        line-height: 1.7;
+        margin-bottom: 10px;
+      }
+    }
+    .cover {
+      float: right;
+    }
+  }
+}

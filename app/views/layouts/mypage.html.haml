@@ -2,16 +2,16 @@
 %html
   %head
     %title how to...
-    = stylesheet_link_tag    "application"
+    = stylesheet_link_tag    "mypage"
     = javascript_include_tag "application"
     = csrf_meta_tags
-  %body{ :class => 'index' }
+  %body{ :class => 'mypage' }
     .head
       = render :partial => "topbar"
     .container.row-fluid
       .sidebar.visible-desktop
-        = render :partial => "how_to/sidebar"
-      .main.span8
+        = render :partial => "mypage/sidebar"
+      .main.span7
         = yield
     %foot
       = render :partial => "foot"

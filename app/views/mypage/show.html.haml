@@ -1,0 +1,25 @@
+%ul.nav.nav-tabs
+  %li.active
+    =link_to '我的首頁'
+  %li
+    =link_to '我的教學'
+  %li
+    =link_to '我的嘗試'
+  %li
+    =link_to '設定'
+.block.newest_howto
+  %h3
+    最新教學文
+  .body
+    = render :partial => "howto_raw"
+  .more
+    =link_to '>>更多教學( 共20篇 )',"#"
+.block.newest_tryto
+  %h3
+    最新嘗試
+  .body
+    - 2.times do |i|
+      = render :partial => "tryto_cell"
+    .clearfix
+  .more
+    =link_to '>>更多新嘗試( 共20篇 )',"#"

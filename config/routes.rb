@@ -51,6 +51,7 @@ Itrue::Application.routes.draw do
   # root :to => 'welcome#index'
   
   root :to => 'how_to#index'
+  match 'mypage' => 'mypage#show', :as => :mypage
 
   # See how all your routes lay out with "rake routes"
 

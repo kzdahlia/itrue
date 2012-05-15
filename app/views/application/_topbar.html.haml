@@ -1,0 +1,27 @@
+.toparea
+  .logo
+    = image_tag "http://placehold.it/300x150"
+  .text
+.topbar.navbar.subnav
+  .navbar-inner
+    .container
+      %a.btn.btn-navbar{ :data => { :toggle => :collapse, :target => '.nav-collapse' } }
+        %span.icon-bar
+        %span.icon-bar
+        %span.icon-bar
+      = link_to 'how to ...', "#", :title => "how to ...", :class => :brand
+      .nav-collapse.collapse
+        %ul.nav
+          %li.active
+            =link_to '首頁', "#"
+          %li
+            =link_to ' 隨便逛逛', "#"
+          %li.divider-vertical
+          %li
+            =link_to '發表教學', "#"
+        %form.navbar-search.pull-left
+          %input.search-query{:placeholder => "Search", :type => "text"}
+        %ul.nav.pull-right
+          %li.divider-vertical
+          %li
+            =link_to ' 登入', "#"

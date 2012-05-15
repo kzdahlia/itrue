@@ -1,0 +1,21 @@
+.howto_cell {
+  width: 300px;
+  float: left;
+  margin: 0 40px 40px 0;
+  .cover {
+    margin: 0 0 20px 10px;
+  }
+  h3 {
+    margin-bottom: 5px;
+  }
+  .body {
+    .data {
+      float: left;
+      margin-left: 9px;
+    }
+    .meta {
+      float: right;
+      margin-right: 9px;
+    }
+  }
+}

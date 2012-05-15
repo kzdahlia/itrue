@@ -1,3 +1,23 @@
-// Place all the styles related to the how_to controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+@media (max-width: 1023px) {
+  .main.span8 {
+    padding: 30px 0;
+    float: none;
+    width: 100%;
+  }
+}
+
+body.index {
+  .main {
+    margin-left: 60px;
+    padding: 30px 0;
+    float: left;
+    width: 66%;
+  }
+}
+
+.line {
+  border-style: solid;
+  border-width: 0 0 1px 0;
+  border-color: grey;
+  margin: 10px 0;
+}

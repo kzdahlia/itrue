@@ -1,0 +1,39 @@
+.howto_raw {
+  .date {
+    float: left;
+    font-size: 14px;
+    color: grey;
+  }
+  h4 {
+    float: right;
+    font-size: 18px;
+    padding-bottom: 10px;
+  }
+  .body {
+    .info {
+      width: 52%;
+      float: left;
+      .category {
+        float: left;
+        margin-bottom: 10px;
+      }
+      .sort {
+        float: right;
+        margin-bottom: 10px;
+      }
+      .intro {
+        line-height: 1.7;
+        margin-bottom: 10px;
+      }
+      .meta {
+        text-align: right;
+        span {
+          margin-right: 5px;
+        }
+      }
+    }
+    .cover {
+      float: right;
+    }
+  }
+}

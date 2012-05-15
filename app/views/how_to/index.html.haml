@@ -1,1 +1,7 @@
-= link_to 'afaf',"#"
+.rank
+  = render :partial => "rank"
+
+.block.howto_cells
+  .body
+    - 6.times do |i|
+      = render :partial => "howto_cell"

@@ -1,0 +1,23 @@
+.nav-collapse.collapse {
+  height: 0px;
+}
+
+.subnav-fixed {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  z-index: 1020; /* 10 less than .navbar-fixed to prevent any overlap */
+}
+
+.top_fix {
+  padding-top: 40px;
+}
+
+.navbar-inner {
+  border-radius: 0;
+}
+
+.navbar {
+  margin-bottom: 0;
+}
