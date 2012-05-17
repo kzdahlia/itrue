@@ -6,12 +6,17 @@
     = javascript_include_tag "application"
     = csrf_meta_tags
   %body{ :class => 'mypage' }
-    .head
-      = render :partial => "topbar"
-    .container.row-fluid
-      .sidebar.visible-desktop
-        = render :partial => "mypage/sidebar"
-      .main.span7
-        = yield
-    %foot
-      = render :partial => "foot"
+    .container
+      .container-fluid.row-fluid
+        .head
+          = render :partial => "topbar"
+      .container-fluid.row-fluid
+        .content
+          .sidebar.visible-desktop
+            = render :partial => "mypage/sidebar"
+          .main.span8
+            = yield
+          .clearfix
+      .container-fluid.row-fluid
+        %foot
+          = render :partial => "foot"

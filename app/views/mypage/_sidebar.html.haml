@@ -1,7 +1,7 @@
 .block.user_data
   .body
     .avatar
-      = image_tag "http://placehold.it/210x280"
+      = image_tag "http://placehold.it/280x210"
     .data
       %h1
         77涵
@@ -12,33 +12,33 @@
           │
         %span
           26歲
-      .stats
-        .total
-          教學：25篇
-        %ul
-          %li
-            眼部彩妝：
-            =link_to '5篇', "#"
-          %li
-            眼部彩妝：
-            =link_to '5篇', "#"
-          %li
-            眼部彩妝：
-            =link_to '5篇', "#"
-          %li
-            眼部彩妝：
-            =link_to '5篇', "#"
       .follow_me
         .btn.btn-info
           %i.icon-eye-open.icon-white
           追蹤作者
+    .stats
+      .total
+        教學：25篇
+      %ul
+        %li
+          眼部彩妝：
+          =link_to '5篇', "#"
+        %li
+          眼部彩妝：
+          =link_to '5篇', "#"
+        %li
+          眼部彩妝：
+          =link_to '5篇', "#"
+        %li
+          眼部彩妝：
+          =link_to '5篇', "#"
     .clearfix
 .block.followers
   .title
     粉絲（16人）
   .body
     .avatars
-      - 12.times do |i|
+      - 9.times do |i|
         = image_tag "http://placehold.it/30x30"
       .clearfix
 .block.following
@@ -46,6 +46,6 @@
     追蹤（16人）
   .body
     .avatars
-      - 12.times do |i|
+      - 9.times do |i|
         = image_tag "http://placehold.it/30x30"
       .clearfix

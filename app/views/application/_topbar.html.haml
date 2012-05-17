@@ -1,7 +1,35 @@
+.urcosme
+  =link_to'回UrCosme首頁',"#"
+
 .toparea
   .logo
-    = image_tag "http://placehold.it/300x150"
   .text
+  .login_area
+    .login
+      %form.well
+        %span.help-inline
+          ="電子信箱"
+        %input.span3{:placeholder => "sample@5fpro.com", :type => "text"}
+        .clearfix
+        %span.help-inline
+          ="　　密碼"
+        %input.pw{:placeholder => "password", :type => "password"}
+        %bottum.btn.btn-small.btn-primary{:type => "submit"}
+          ="登入"
+      .open_id
+        其它ID
+        %span.fb_icon
+        %span.y_icon
+      .password
+        .fogot_pw
+          =link_to'忘記密碼',"#"
+        .remember_pw
+          %label.checkbox
+            %input{:type => "checkbox", :checked => "true"}
+              記住密碼
+        .clearfix
+      .clearfix
+  .clearfix
 .topbar.navbar.subnav
   .navbar-inner
     .container
@@ -17,11 +45,16 @@
           %li
             =link_to ' 隨便逛逛', "#"
           %li.divider-vertical
-          %li
-            =link_to '發表教學', "#"
         %form.navbar-search.pull-left
           %input.search-query{:placeholder => "Search", :type => "text"}
         %ul.nav.pull-right
           %li.divider-vertical
           %li
-            =link_to ' 登入', "#"
+            %bottum.btn.btn-inverse
+              %i.icon-white.icon-cog
+              ="設定"
+          %li.divider-vertical
+          %li
+            %bottum.btn.btn-success
+              %i.icon-white.icon-edit
+              ="發表教學"
