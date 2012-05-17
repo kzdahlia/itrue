@@ -11,7 +11,8 @@
   }
   .body {
     .info {
-      width: 52%;
+      width: 48%;
+      margin-left: 3px;
       float: left;
       .category {
         float: left;
@@ -23,6 +24,8 @@
       }
       .intro {
         line-height: 1.7;
+        overflow: hidden;
+        height: 150px;
         margin-bottom: 10px;
       }
       .meta {

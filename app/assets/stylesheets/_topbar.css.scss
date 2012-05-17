@@ -1,3 +1,44 @@
+.urcosme {
+  text-align: right;
+  margin: 5px 0;
+}
+.toparea {
+  .logo {
+    float: left;
+  }
+  .login_area {
+    float: right;
+    margin: 5px 10px;
+    .login {
+      .well {
+        margin-bottom: 5px;
+        .help-inline {
+          padding: 0 5px 10px 0;
+        }
+        input.pw {
+          width: 165px;
+        }
+        .btn-primary {
+          margin: 0 5px 10px 0;
+        }
+      }
+      .open_id {
+        float: left;
+      }
+      .password {
+        float: right;
+        .fogot_pw {
+          float: left;
+          margin-right: 10px;
+        }
+        .remember_pw {
+          float: right;
+        }
+      }
+    }
+  }
+}
+
 .nav-collapse.collapse {
   height: 0px;
 }
@@ -7,6 +48,8 @@
   top: 0px;
   left: 0px;
   right: 0px;
+  width: 940px;
+  margin: 0 auto;
   z-index: 1020; /* 10 less than .navbar-fixed to prevent any overlap */
 }
 
