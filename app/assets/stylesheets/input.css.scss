@@ -1,0 +1,47 @@
+.left_area {
+  float: left;
+}
+.right_area {
+  float: right;
+}
+
+.step_cell {
+  .left_area {
+    width: 140px;
+    float: left;
+    margin: 140px auto 0 auto;
+    .arrow {
+      width: 140px;
+      text-align: center;
+    }
+    .step_area {
+      .delete {
+        float: left;
+      }
+      .step_count {
+        float: right;
+        font-size: 20px;
+        padding-right: 40px;
+        margin-bottom: 10px;
+      }
+    }
+  }
+  .right_area {
+    float: right;
+  }
+}
+.next_area {
+  text-align: right;
+  margin-top: 80px;
+  .preview {
+    margin-right: 10px;
+  }
+  .next_step {
+    float: none;
+  }
+}
+
+.next_step {
+  float: right;
+  margin: 50px 15px 0 0;
+}

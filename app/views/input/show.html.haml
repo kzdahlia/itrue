@@ -1,0 +1,58 @@
+= render :partial => "progress_area"
+
+.block
+  .title
+    %h3
+      教學標題
+    .small
+      ◎還能輸入20字
+    .clearfix
+  .body
+    %input.span5{:placeholder => "...請輸入標題", :type => "text"}
+.left_area
+  .block
+    .title
+      %h3
+        完成/效果圖
+      .small
+        ◎選填
+      .clearfix
+    .body
+      = image_tag "http://placehold.it/280x210"
+.right_area
+  .block
+    .title
+      %h3
+        教學分類
+      .clearfix
+    .body
+      .category_select
+        .main_category
+          大分類：
+          %select#select01.span2
+            %option 彩妝
+            %option 臉部保養
+            %option 身體保養
+        .sub_category
+          小分類：
+          %select#select01.span2
+            %option 眼部彩妝
+            %option 全臉妝容
+            %option 指甲彩繪
+            %option 其他
+  .block
+    .title
+      %h3
+        難易度
+      .small
+        ◎選填
+      .clearfix
+    .body
+      .sort
+        ★☆☆☆☆
+      初心者彩妝
+.clearfix
+.next_step
+  %bottum.btn.btn-primary.btn-large
+    %i.icon-white.icon-chevron-right
+    = link_to "下一步 開始寫教學囉！", "step2"

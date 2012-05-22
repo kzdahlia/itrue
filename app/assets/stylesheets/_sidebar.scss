@@ -10,6 +10,44 @@ body.index {
     }
   }
 }
+
+body.input {
+  .sidebar {
+    padding: 50px 10px 0 10px;
+    background-color: #EDD5D9;
+    width: 340px;
+    height: 700px;
+    float: left;
+    .info {
+      .category {
+        float: left;
+      }
+      .sort {
+        float: right;
+      }
+    }
+    h1 {
+      font-size: 20px;
+      margin: 10px 0;
+    }
+    .data {
+      line-height: 40px;
+      margin-bottom: 15px;
+      .avatar {
+        float: left;
+      }
+      .user_id {
+        float: left;
+        margin-left:10px;
+      }
+      .meta {
+        float: left;
+        margin-left:10px;
+      }
+    }
+  }
+}
+
 body.mypage {
   .sidebar {
     background-color: #EDD5D9;

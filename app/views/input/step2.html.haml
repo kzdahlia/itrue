@@ -1,0 +1,34 @@
+= render :partial => "progress_area"
+
+.block
+  .title
+    %h3
+      教學步驟
+    .clearfix
+  .body
+    .step_cell{ :data => { :type => :hover, :show => '.close' }}
+      .left_area
+        .arrow.arrow_up.close
+          %i.icon-arrow-up
+        .step_area
+          .delete.close
+            %i.icon-remove-sign
+          .step_count
+            Step.1
+        .arrow.arrow_down.close
+          %i.icon-arrow-down
+        .clearfix
+      .right_area
+        .text
+          %input.span5{:placeholder => "...請輸入步驟說明", :type => "text"}
+        .pic
+          = image_tag "http://placehold.it/380x285"
+      .clearfix
+.next_area
+  %span.preview
+    =link_to "頁面預覽", "#"
+  %span.next_step
+    %bottum.btn.btn-primary.btn-large
+      %i.icon-white.icon-chevron-right
+      ="下一步"
+      ="告訴大家你用了哪些好物吧～"

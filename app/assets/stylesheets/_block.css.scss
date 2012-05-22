@@ -1,0 +1,20 @@
+.block {
+  padding: 10px;
+  .title {
+    border-style: solid;
+    border-width: 0 0 1px 0;
+    border-color: #bbbbbb;
+    margin: 10px 0;
+    h3 {
+      float: left;
+    }
+    .small {
+      float: left;
+      margin-left: 10px;
+      line-height: 27px;
+    }
+  }
+  .body {
+    
+  }
+}

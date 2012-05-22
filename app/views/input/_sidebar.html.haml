@@ -1,0 +1,39 @@
+.info
+  .category
+    = link_to ' 臉部彩妝', '#', :title => "臉部彩妝"
+    >
+    = link_to ' 眼妝教學', '#', :title => "眼妝教學"
+  .sort
+    難易度：★★
+  .clearfix
+%h1
+  【分享】注目！女神LENA眼妝教學
+.data
+  .avatar
+    = image_tag "http://placehold.it/30x40"
+  .user_id
+    =link_to "Dahlia", "#"
+  .meta
+    %span
+      混合膚質
+    %span
+      │
+    %span
+      26歲
+  .clearfix
+.final_pic
+  = image_tag "http://placehold.it/340x255"
+.block.intro
+  .title
+    %h3
+      教學介紹
+    .small
+      ◎ 不支援 html 語法， enter 可換行
+    .clearfix
+  .body
+    .control-group
+      %label.control-label{:for => "textarea"}
+      .controls
+        %textarea.span4{:placeholder => "可以簡短介紹這個教學的起因、靈感來源...", :rows => "6"}
+        %span.help-inline
+          ="還能輸入 300 字"

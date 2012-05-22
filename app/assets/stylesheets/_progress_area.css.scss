@@ -1,0 +1,28 @@
+.progress_area {
+  background-color: #C7C7C7;
+  @include border-radius(20px);
+  border-style: solid;
+  border-width: 1px;
+  border-color: #bbbbbb;
+  padding: 10px;
+  margin-top: 30px;
+  .title {
+    padding: 30px 0 0 30px;
+  }
+  .body {
+    padding: 15px 0 0 30px;
+    .step.box {
+      float: left;
+      margin-bottom: 30px;
+      @include border-radius(50px);
+    }
+    .step_active {
+      background-color: #EDD5D9;
+    }
+    .next {
+      float: left;
+      padding-top: 10px;
+      margin: 0 10px;
+    }
+  }
+}
