@@ -1,0 +1,18 @@
+.product_select_row {
+  margin-bottom: 15px;
+  .icon-plus-sign {
+    margin: 35px 5px 0 0;
+    float: left;
+  }
+  .body {
+    float: left;
+    .pic {
+      float: left;
+    }
+    .text {
+      float: left;
+      margin-left: 5px;
+      width: 125px;
+    }
+  }
+}

@@ -54,6 +54,7 @@ Itrue::Application.routes.draw do
   match 'mypage' => 'mypage#show', :as => :mypage
   match 'input' => 'input#show', :as => :input
   match 'step2' => 'input#step2', :as => :step2
+  match 'step3' => 'input#step3', :as => :step3
 
   # See how all your routes lay out with "rake routes"
 

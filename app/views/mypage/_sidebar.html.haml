@@ -35,17 +35,19 @@
     .clearfix
 .block.followers
   .title
-    粉絲（16人）
+    我的粉絲（16人）
   .body
     .avatars
-      - 9.times do |i|
+      - 8.times do |i|
         = image_tag "http://placehold.it/30x30"
       .clearfix
 .block.following
   .title
-    追蹤（16人）
+    關注對象（16人）
+    .edit
+      =link_to "編輯", "#"
   .body
     .avatars
-      - 9.times do |i|
+      - 8.times do |i|
         = image_tag "http://placehold.it/30x30"
       .clearfix

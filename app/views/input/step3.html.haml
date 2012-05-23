@@ -1,0 +1,63 @@
+= render :partial => "progress_area"
+
+.block.select_products
+  .title
+    %h3
+      使用彩妝/保養品
+    .clearfix
+  .body
+    .product_list
+      %h4
+        產品列表
+      .box
+        .search
+          .text
+            %input.span3{:placeholder => "...請輸入彩妝 / 保養品關鍵字", :type => "text"}
+          .condition
+            .main_category
+              %select#select01.span2
+                %option 請選擇屬性
+                %option 彩妝
+                %option 臉部保養
+                %option 身體保養
+            .brand
+              %select#select01.span2
+                %option 請選擇品牌
+                %option 彩妝
+                %option 臉部保養
+                %option 身體保養
+            .clearfix
+        .results
+          - 6.times do |i|
+            = render :partial => "product_select_row"
+    .used_list
+      %h4
+        本次使用清單
+      .box
+        - 6.times do |i|
+          = render :partial => "product_select_row"
+    .clearfix
+.block.memo
+  .title
+    %h3
+      memo & 補述
+    .small
+      ◎ 選填。不支援 html 語法， enter 可換行
+    .clearfix
+  .body
+    .control-group
+      %label.control-label{:for => "textarea"}
+      .controls
+        %textarea.span6{:placeholder => "有什麼需要特別注意的地方？或者是私藏小撇步？", :rows => "5"}
+        %span.help-inline
+          ="還能輸入 300 字"
+.next_area
+  %span.preview
+    =link_to "頁面預覽", "#"
+  %span.preview
+    =link_to "存成草搞", "#"
+  %span.next_step
+    %bottum.btn.btn-primary.btn-large
+      %i.icon-white.icon-chevron-right
+      ="完成"
+      ="直接發表你的教學"

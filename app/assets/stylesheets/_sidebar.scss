@@ -52,7 +52,7 @@ body.mypage {
   .sidebar {
     background-color: #EDD5D9;
     width: 300px;
-    height: 660px;
+    height: 720px;
     float: left;
     padding:25px 15px;
     .user_data {
@@ -61,7 +61,6 @@ body.mypage {
         margin-bottom: 15px;
         .avatar {
         float: left;
-        margin-left: 10px;
         }
       }
     .data {
@@ -85,8 +84,8 @@ body.mypage {
     }
     .stats {
       font-size: 16px;
-      margin: 15px;
-      float: right;
+      margin: 20px 0;
+      float: left;
       .total {
         margin-bottom: 5px;
       }
@@ -110,6 +109,10 @@ body.mypage {
       .title {
         font-size: 16px;
         margin-bottom: 5px;
+        .edit {
+          float: right;
+          font-size: 12px;
+        }
       }
     }
   }
