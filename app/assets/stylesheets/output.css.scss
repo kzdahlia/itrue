@@ -1,0 +1,159 @@
+.output {
+  .main.span7 {
+    width: 578px;
+    margin-left: 0;
+    .box {
+      width: 545px;
+    }
+    .steps {
+      .body {
+        margin: 25px;
+        .step {
+          float: left;
+          font-size: 22px;
+          color: #C74950;
+          margin-right: 20px;
+        }
+        .main {
+          float: left;
+          .detail {
+            margin-bottom: 10px;
+            line-height: 1.5;
+          }
+        }
+      }
+    }
+    .hint {
+      .title {
+        border-style: hidden;
+      }
+      .body {
+        width: 80%;
+        float: right;
+        .text {
+          border-style: solid;
+          border-width: 1px;
+          border-color: #bbbbbb;
+          border-radius: 10px;
+          padding: 5px;
+        }
+      }
+    }
+    .product_list {
+      height: 320px;
+      .body {
+        .product_select_row {
+          float: left;
+          margin: 10px 20px;
+          i {
+            display: none;
+          }
+          .text {
+            width: 160px;
+          }
+        }
+      }
+    }
+    .sns {
+      .action_box {
+        float: left;
+        width: 30%;
+        .rank {
+          .body {
+            margin: 15px 0;
+            text-align:center;
+            bottum {
+              margin-left: 10px;
+            }
+          }
+        }
+        .favorite {
+          background-color: #EEF2E6;
+          padding: 10px 10px 10px 25px;
+          .title {
+            margin-right: 5px;
+          }
+        }
+      }
+      .share {
+        float: left;
+        width: 70%;
+        h4 {
+          margin-left: 15px;
+        }
+        .body {
+          .btn_area {
+            .sns_btn {
+              float: left;
+              margin: 25px 15px 15px 15px;
+            }
+          }
+          .print {
+            text-align: right;
+          }
+        }
+      }
+    }
+    .upload {
+      .title {
+        h3 {
+          float: left;
+        }
+        .small {
+          float: right;
+        }
+      }
+      .body {
+        .tryto_cell {
+          width: 240px;
+          float: left;
+          margin: 0 10px 10px 0;
+          h4 {
+            display: none;
+          }
+          .body {
+            .info {
+              width: 75px;
+              height: 150px;
+              overflow: hidden;
+            }
+            .cover {
+              .pic {
+                margin-bottom: 5px;
+              }
+              .data {
+                float: right;
+                .avatar {
+                  float: left;
+                  margin-right: 5px;
+                }
+                .user {
+                  float: left;
+                  line-height: 2.4;
+                }
+              }
+            }
+          }
+        }
+      }
+      .upload_btn {
+        text-align:center;
+      }
+    }
+    .comment {
+      .title {
+        h3 {
+          float: left;
+        }
+        .small {
+          float: right;
+        }
+      }
+      .body {
+        .upload_btn {
+          text-align:center;
+        }
+      }
+    }
+  }
+}

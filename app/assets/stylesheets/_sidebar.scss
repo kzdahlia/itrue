@@ -3,7 +3,7 @@ body.index {
     padding: 50px 0 0 30px;
     background-color: #EDD5D9;
     width: 230px;
-    height: 1088px;
+    height: 1100px;
     float: left;
     label {
       margin: 7px 0;
@@ -22,7 +22,44 @@ body.input {
       .category {
         float: left;
       }
-      .sort {
+      .level {
+        float: right;
+      }
+    }
+    h1 {
+      font-size: 20px;
+      margin: 10px 0;
+    }
+    .data {
+      line-height: 40px;
+      margin-bottom: 15px;
+      .avatar {
+        float: left;
+      }
+      .user_id {
+        float: left;
+        margin-left:10px;
+      }
+      .meta {
+        float: left;
+        margin-left:10px;
+      }
+    }
+  }
+}
+
+body.output {
+  .sidebar {
+    padding: 50px 10px 0 10px;
+    background-color: #EDD5D9;
+    width: 340px;
+    height: 700px;
+    float: left;
+    .info {
+      .category {
+        float: left;
+      }
+      .level {
         float: right;
       }
     }
@@ -52,7 +89,7 @@ body.mypage {
   .sidebar {
     background-color: #EDD5D9;
     width: 300px;
-    height: 720px;
+    height: 790px;
     float: left;
     padding:25px 15px;
     .user_data {

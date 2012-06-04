@@ -1,0 +1,117 @@
+.topbar.navbar.subnav.visible-desktop
+  .navbar-inner
+    .container
+      %a.btn.btn-navbar{ :data => { :toggle => :collapse, :target => '.nav-collapse' } }
+        %span.icon-bar
+        %span.icon-bar
+        %span.icon-bar
+      .nav-collapse.collapse
+        %ul.nav
+          %li.active
+            =link_to '教學步驟', "#"
+          %li
+            =link_to ' 小提示', "#"
+          %li
+            =link_to ' 使用產品介紹', "#"
+          %li
+            =link_to ' 我也試了！上傳成果', "#"
+          %li
+            =link_to ' 留言', "#"
+        %ul.nav.pull-right
+          %li.divider-vertical
+          %li
+            %bottum.btn.btn-info
+              %i.icon-white.icon-circle-arrow-up
+            
+.output_area
+  .block.steps
+    .title
+      %h3
+        教學步驟
+      .clearfix
+    - 3.times do |i|
+      .body
+        .step
+          step1
+        .main
+          .detail
+            打亮整個眼窩和眉頭部份，整體妝感會看起來比較乾淨。
+          .pic
+            = image_tag "http://placehold.it/380x285"
+        .clearfix
+  .block.hint
+    .title
+      %h3
+        來自77涵的小提示
+      .clearfix
+    .body
+      .text
+        護膚品並不一定非要使用一個品牌的。根據不同膚質的需要混用護膚品，更有利於補充皮膚所需要的營養，但這並不是說任何護膚品都能隨便混用，
+        胡亂地混用不但無法起到加強護膚的效果，反而可能傷害到肌膚。了解以下護膚品混用四大原則，讓你護膚品混搭也健康美麗。
+    .clearfix
+  .box.product_list
+    .title
+      %h3
+        這次教學，我使用了這些彩妝品...
+    .body
+      - 6.times do |i|
+        = render :partial => "product_select_row"
+      .clearfix
+  .box.sns
+    .action_box
+      .rank
+        %h4
+          你覺得這篇教學如何？
+        .body
+          %bottum.btn.btn-primary
+            ="：) 不錯"
+          %bottum.btn
+            ="：("
+          .clearfix
+      .favorite
+        %span.title
+          加入收藏夾
+        %span.body
+          %bottum.btn.btn-info
+            %i.icon-white.icon-star
+    .share
+      %h4
+        分享這篇教學給其他朋友！
+      .body
+        .btn_area
+          - 5.times do |i|
+            .sns_btn
+              = image_tag "http://placehold.it/45x45"
+          .clearfix
+        .print
+          =link_to "列印此篇教學", "#"
+    .clearfix
+  .box.upload
+    .title
+      %h3
+        我們都試了！
+      .small
+        已有4次成品
+      .clearfix
+    .body
+      - 6.times do |i|
+        = render :partial => "tryto_cell"
+      .clearfix
+      .upload_btn
+        %bottum.btn.btn-primary
+          ="我也試了！立刻po照"
+  .box.comment
+    .title
+      %h3
+        留言
+      .small
+        =link_to "展開已有評論(5則)", "#"
+      .clearfix
+    .body
+      .control-group
+        %label.control-label{:for => "textarea"}
+        .controls
+          %textarea.span7{:placeholder => "可以留言感謝作者，如果有疑惑也在這邊發問吧！", :rows => "6"}
+        .upload_btn
+          %bottum.btn.btn-primary
+            ="送出"

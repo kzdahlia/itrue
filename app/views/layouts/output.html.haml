@@ -1,0 +1,22 @@
+!!!
+%html
+  %head
+    %title how to...
+    = stylesheet_link_tag    "application"
+    = javascript_include_tag "application"
+    = csrf_meta_tags
+  %body{ :class => 'output' }
+    .container
+      .container-fluid.row-fluid
+        .head
+          = render :partial => "topbar"
+      .container-fluid.row-fluid
+        .content
+          .sidebar.visible-desktop
+            = render :partial => "output/sidebar"
+          .main.span7
+            = yield
+          .clearfix
+      .container-fluid.row-fluid
+        %foot
+          = render :partial => "foot"

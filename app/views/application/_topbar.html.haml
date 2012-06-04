@@ -37,13 +37,13 @@
         %span.icon-bar
         %span.icon-bar
         %span.icon-bar
-      = link_to 'how to ...', "#", :title => "how to ...", :class => :brand
+      = link_to 'how to ...', root_path, :title => "how to ...", :class => :brand
       .nav-collapse.collapse
         %ul.nav
           %li.active
-            =link_to '首頁', "#"
+            =link_to '首頁', root_path
           %li
-            =link_to ' 隨便逛逛', "#"
+            =link_to ' 隨便逛逛', output_path
           %li.divider-vertical
         %form.navbar-search.pull-left
           %input.search-query{:placeholder => "Search", :type => "text"}
@@ -57,9 +57,9 @@
           %li
             %bottum.btn.btn-info
               %i.icon-white.icon-user
-              = link_to "my page", "mypage"
+              = link_to "my page", mypage_path
           %li.divider-vertical
           %li
             %bottum.btn.btn-success
               %i.icon-white.icon-edit
-              = link_to "發表教學", "input"
+              = link_to "發表教學", input_path

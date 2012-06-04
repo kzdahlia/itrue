@@ -1,7 +1,6 @@
 @import "application";
 @import "sidebar";
 @import "howto_row";
-@import "tryto_cell";
 
 body.mypage {
   .main {
@@ -15,5 +14,12 @@ body.mypage {
   .more {
     text-align: right;
     margin: 3px 0;
+  }
+  .tryto_cell {
+    .cover {
+      .data {
+        display: none;
+      }
+    }
   }
 }
