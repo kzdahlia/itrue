@@ -1,5 +1,5 @@
 class HowToController < ApplicationController
-  def how_to
+  def show
     render :layout => "application"
   end
 end

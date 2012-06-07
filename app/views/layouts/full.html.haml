@@ -1,0 +1,18 @@
+!!!
+%html
+  %head
+    %title how to...
+    = stylesheet_link_tag    "application"
+    = javascript_include_tag "application"
+    = csrf_meta_tags
+  %body{ :class => 'full' }
+    .container
+      .container-fluid.row-fluid
+        .head
+          = render :partial => "topbar"
+      .container-fluid.row-fluid
+        .content
+          = yield
+      .container-fluid.row-fluid
+        %foot
+          = render :partial => "foot"

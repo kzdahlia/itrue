@@ -1,5 +1,5 @@
 class MypageController < ApplicationController
-  def mypage
+  def show
     render :layout => "mypage"
   end
 end

@@ -51,8 +51,9 @@ Itrue::Application.routes.draw do
   # root :to => 'welcome#index'
   
   root :to => 'how_to#index'
+  match 'mypage' => 'mypage#show', :as => :mypage
   match 'favorites' => 'favorites#show', :as => :favorites
-  match 'output' => 'mypage#show', :as => :output
+  match 'output' => 'output#show', :as => :output
   match 'input' => 'input#show', :as => :input
   match 'step2' => 'input#step2', :as => :step2
   match 'step3' => 'input#step3', :as => :step3
